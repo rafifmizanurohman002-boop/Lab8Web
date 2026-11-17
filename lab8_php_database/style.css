@@ -1,0 +1,120 @@
+/* style.css — lab8_php_database (CRUD Data Barang) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #f2f4f8;
+    color: #222;
+    padding: 24px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #d9dee7;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 18px;
+    color: #1a3c6e;
+    border-bottom: 2px solid #1a3c6e;
+    padding-bottom: 10px;
+}
+
+/* --- Tabel (index.php) --- */
+.main {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #d9dee7;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background: #1a3c6e;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background: #f7f9fc;
+}
+
+td img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #d9dee7;
+    display: block;
+}
+
+/* --- Form (tambah.php & ubah.php) --- */
+.input {
+    margin-bottom: 14px;
+}
+
+.input label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input input[type="text"],
+.input select {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #c4ccd8;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.input input[type="file"] {
+    font-size: 14px;
+}
+
+.input input[type="text"]:focus,
+.input select:focus {
+    outline: none;
+    border-color: #1a3c6e;
+    box-shadow: 0 0 0 2px rgba(26, 60, 110, 0.15);
+}
+
+.submit {
+    margin-top: 18px;
+}
+
+.submit input[type="submit"] {
+    background: #1a3c6e;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 26px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit input[type="submit"]:hover {
+    background: #12294c;
+}

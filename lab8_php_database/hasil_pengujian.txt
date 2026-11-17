@@ -1,0 +1,36 @@
+Total: 35 pemeriksaan — 35 PASS, 0 FAIL
+PASS | HTTP 200 koneksi.php | status=200
+PASS | tanpa error PHP di koneksi.php
+PASS | koneksi: pesan berhasil tampil
+PASS | koneksi: tidak ada pesan gagal
+PASS | HTTP 200 index.php | status=200
+PASS | tanpa error PHP di index.php
+PASS | index: 3 baris data awal | baris=3
+PASS | index: HP Samsung Android tampil
+PASS | index: HP Xiaomi Android tampil
+PASS | index: HP OPPO Android tampil
+PASS | index: 3 gambar termuat dari folder gambar/
+PASS | HTTP 200 tambah.php | status=200
+PASS | tanpa error PHP di tambah.php
+PASS | tambah: form lengkap (nama, kategori, harga, stok, file)
+PASS | tambah: redirect ke index.php | http://localhost/lab8_php_database/index.php
+PASS | tambah: data ke-4 muncul di index
+PASS | tambah: index kini 4 baris | baris=4
+PASS | tambah: harga beli 4500000 tersimpan
+PASS | tambah: harga jual 5000000 tersimpan
+PASS | tambah: gambar upload tampil (4 gambar)
+PASS | tambah: id data baru terbaca dari kolom Aksi | id=6
+PASS | HTTP 200 ubah.php?id=6 | status=200
+PASS | tanpa error PHP di ubah.php?id=6
+PASS | ubah: form termuat data lama (nama HP Apple iPhone)
+PASS | ubah: stok lama 3 tampil
+PASS | ubah: redirect ke index.php | http://localhost/lab8_php_database/index.php
+PASS | ubah: nama baru tampil di index
+PASS | ubah: stok baru 7 tampil
+PASS | ubah: data lama tidak ada lagi
+PASS | hapus: redirect ke index.php | http://localhost/lab8_php_database/index.php
+PASS | hapus: data terhapus (kembali 3 baris) | baris=3
+PASS | hapus: nama tidak ada di index
+PASS | phpmyAdmin: database latihan1 terbuka
+PASS | phpmyAdmin: tabel data_barang menampilkan data
+PASS | tanpa error JS di seluruh halaman
